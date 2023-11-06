@@ -29,14 +29,17 @@
       padding: 10px;
       margin: 10px 10px;
       cursor: pointer;
-      max-width: 300px; /* Limit maximum width for better mobile display */
-      margin: 0 auto; /* Center align the rows */
+      max-width: 300px;
+      margin: 0 auto;
     }
     .row + .row {
-      margin-top: 10px; /* Add spacing between rows using the adjacent sibling selector */
+      margin-top: 10px;
     }
     .row h2 {
-      margin: 10px 0;
+      margin: 5px 0; /* Reduce top and bottom margin for compactness */
+    }
+    .row p {
+      margin: 0; /* Remove margin from the paragraph to make it more compact */
     }
   </style>
 </head>
@@ -53,7 +56,7 @@
       <h2>🍝 Menu Pranzo</h2>
       <p>Buon appetito, coi nostri piatti caldi</p>
     </div>
-    <div class="row" onclick="location.href='liste/vini.pdf';">
+    <div class "row" onclick="location.href='liste/vini.pdf';">
       <h2>🍷 I Nostri Vini</h2>
       <p>Scopri la nostra selezione di vini prelibati</p>
     </div>
