@@ -1,9 +1,55 @@
-<div style="text-align:center;">
-  <img title="a title" alt="Alt text" src="164290334_219780369569721_4401268151119714142_n.jpg">
-</div>
-
-<a href="https://example.com/whine-menu">
-  <div style="text-align:center; background-color: #f5f5f5; padding: 10px;">
-    🍷 Whine Menu
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .row {
+      flex: 1;
+      text-align: center;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="header-image.jpg" alt="Header Image">
+  </header>
+  <div class="container">
+    <div class="row" onclick="location.href='wine.html';">
+      <h2>Wine</h2>
+      <p>Explore our exquisite wine selection</p>
+    </div>
+    <div class="row" onclick="location.href='cocktail.html';">
+      <h2>Cocktail</h2>
+      <p>Discover our signature cocktails</p>
+    </div>
+    <div class="row" onclick="location.href='cafeteria.html';">
+      <h2>Cafeteria</h2>
+      <p>Enjoy a variety of coffee and pastries</p>
+    </div>
   </div>
-</a>
+</body>
+</html>
