@@ -32,6 +32,9 @@
       max-width: 300px; /* Limit maximum width for better mobile display */
       margin: 0 auto; /* Center align the rows */
     }
+    .row + .row {
+      margin-top: 10px; /* Add spacing between rows using the adjacent sibling selector */
+    }
     .row h2 {
       margin: 10px 0;
     }
@@ -46,17 +49,14 @@
       <h2>☕️ Caffetteria</h2>
       <p>Goditi una varietà di dolci e caffè</p>
     </div>
-    <br>
     <div class="row" onclick="location.href='liste/pranzo.pdf';">
       <h2>🍝 Menu Pranzo</h2>
       <p>Buon appetito, coi nostri piatti caldi</p>
     </div>
-    <br>
     <div class="row" onclick="location.href='liste/vini.pdf';">
       <h2>🍷 I Nostri Vini</h2>
       <p>Scopri la nostra selezione di vini prelibati</p>
     </div>
-    <br>
     <div class="row" onclick="location.href='liste/cocktail.pdf';">
       <h2>🍹 Cocktails</h2>
       <p>Scopri i nostri cocktails squisiti</p>
